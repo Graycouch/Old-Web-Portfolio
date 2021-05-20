@@ -6,7 +6,7 @@ export default function Contact() {
     function sendEmail(e) {
         e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_hiaibpy', e.target, 'user_lz6D8EjVLqkcPaqTTvcp9')
+    emailjs.sendForm('service_rpc2cfr', 'template_hiaibpy', e.target, 'user_lz6D8EjVLqkcPaqTTvcp9')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
