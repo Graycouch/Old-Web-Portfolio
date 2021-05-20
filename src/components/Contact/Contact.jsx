@@ -1,12 +1,12 @@
 import emailjs from "emailjs-com";
 import React from 'react';
 
-export default function ContactUs() {
+export default function Contact() {
 
     function sendEmail(e) {
         e.preventDefault();
 
-    emailjs.sendForm('gmail', 'youtube_template', e.target, 'user_JABO21I8Gm6sxByJH17Nu')
+    emailjs.sendForm('gmail', 'template_hiaibpy', e.target, 'user_lz6D8EjVLqkcPaqTTvcp9')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
